@@ -23,10 +23,15 @@
         npm run dev
 6. Daftar endpoint API.
     GET /api/siswa - Menampilkan seluruh data siswa
+    ![Screenshot Aplikasi](./assets/pengujian/GetAll.png)
     GET /api/siswa/:id - Menampilkan satu data siswa berdasarkan id
+    ![Screenshot Aplikasi](./assets/pengujian/GetId.png)
     POST /api/siswa - Menambahkan data siswa baru
+    ![Screenshot Aplikasi](./assets/pengujian/GetId.png)
     PUT /api/siswa/:id - Mengubah data siswa berdasarkan ID
+    ![Screenshot Aplikasi](./assets/pengujian/Put.png)
     DELETE /api/siswa/:id - Menghapus data siswa berdasarkan ID
+    ![Screenshot Aplikasi](./assets/pengujian/Del.png)
 7. Screenshot aplikasi.
     ![Screenshot Aplikasi](./assets/Screenshot%20(476).png)
 8. Identitas pembuat
@@ -36,3 +41,4 @@
     Alamat : Griya Parung Panjang Blok c1 A No.2
     Tempat Tanggal Lahir : Bogor, 24-09-2008 
     Tinggi/Berat Badan : 170Cm/68Kg
+
