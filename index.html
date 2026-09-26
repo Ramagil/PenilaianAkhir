@@ -11,7 +11,6 @@
     <div class="container my-5">
         <h2 class="text-center mb-4">Aplikasi Manajemen Data Siswa</h2>
 
-        <!-- Form Tambah/Edit Data -->
         <div class="card shadow mb-4">
             <div class="card-header bg-primary text-white" id="form-title">Tambah Data Siswa</div>
             <div class="card-body">
@@ -43,7 +42,6 @@
             </div>
         </div>
 
-        <!-- Tabel Data Siswa -->
         <div class="card shadow">
             <div class="card-header bg-secondary text-white">Daftar Siswa</div>
             <div class="card-body">
@@ -61,7 +59,7 @@
                             </tr>
                         </thead>
                         <tbody id="tabelSiswa">
-                            <!-- Data akan dimuat melalui JavaScript -->
+
                         </tbody>
                     </table>
                 </div>
@@ -69,7 +67,7 @@
         </div>
     </div>
 
-    <!-- JavaScript untuk menghubungkan ke API Express.js -->
+
     <script>
         const API_URL = 'http://localhost:3000/api/siswa';
 
@@ -105,7 +103,7 @@
             }
         }
 
-        // Handle Submit Form (Tambah atau Update)
+
         document.getElementById('siswaForm').addEventListener('submit', async function(e) {
             e.preventDefault();
 
@@ -121,14 +119,14 @@
             try {
                 let response;
                 if (id) {
-                    // Update (PUT)
+
                     response = await fetch(`${API_URL}/${id}`, {
                         method: 'PUT',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(dataSiswa)
                     });
                 } else {
-                    // Tambah (POST)
+
                     response = await fetch(API_URL, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
@@ -148,7 +146,6 @@
             }
         });
 
-        // Fungsi Edit (Mengisi form dengan data yang dipilih)
         function editSiswa(id, nis, nama, kelas, jurusan, alamat) {
             document.getElementById('siswaId').value = id;
             document.getElementById('nis').value = nis;
@@ -162,7 +159,6 @@
             document.getElementById('btn-cancel').classList.remove('d-none');
         }
 
-        // Fungsi Hapus Data
         async function hapusSiswa(id) {
             if (confirm('Apakah Anda yakin ingin menghapus data ini?')) {
                 try {
@@ -180,7 +176,6 @@
             }
         }
 
-        // Reset Form ke Kondisi Awal
         function resetForm() {
             document.getElementById('siswaForm').reset();
             document.getElementById('siswaId').value = '';
