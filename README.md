@@ -9,6 +9,9 @@
         HTML Menggunakan Boostrap 5
     DataBase :
         MySql Meggunakan Software HeideSql Portable 12.0.6908  
+    Penyimpanan :
+        Di simpan Di git hub Dengan Repository 
+        ![Screenshot Git](./assets/github.png)
 4. Cara menjalankan backend.
     1. Masuk Ke Folder   
         cd Nama_Folder
@@ -23,17 +26,17 @@
         npm run dev
 6. Daftar endpoint API.
     GET /api/siswa - Menampilkan seluruh data siswa
-    ![Screenshot Aplikasi](./assets/pengujian/GetAll.png)
+    ![Screenshot RESTAPI](./assets/pengujian/GetAll.png)
     GET /api/siswa/:id - Menampilkan satu data siswa berdasarkan id
-    ![Screenshot Aplikasi](./assets/pengujian/GetId.png)
+    ![Screenshot RESTAPI](./assets/pengujian/GetId.png)
     POST /api/siswa - Menambahkan data siswa baru
-    ![Screenshot Aplikasi](./assets/pengujian/GetId.png)
+    ![Screenshot RESTAPI](./assets/pengujian/GetId.png)
     PUT /api/siswa/:id - Mengubah data siswa berdasarkan ID
-    ![Screenshot Aplikasi](./assets/pengujian/Put.png)
+    ![Screenshot RESTAPI](./assets/pengujian/Put.png)
     DELETE /api/siswa/:id - Menghapus data siswa berdasarkan ID
-    ![Screenshot Aplikasi](./assets/pengujian/Del.png)
+    ![Screenshot RESTAPI](./assets/pengujian/Del.png)
 7. Screenshot aplikasi.
-    ![Screenshot Aplikasi](./assets/Screenshot%20(476).png)
+    ![Screenshot RESTAPI](./assets/Screenshot%20(476).png)
 8. Identitas pembuat
     Nama : Ramadhan Agil Siraj
     Kelas : 12
